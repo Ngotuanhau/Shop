@@ -1,0 +1,28 @@
+.ant-layout-header {
+  background-color: #fff !important;
+}
+
+.guestLinks, .authLinks {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.guestLinks .nav-link {
+  padding: 0 20px;
+}
+
+.guestLinks .nav-link:last-child {
+  padding-right: 0
+}
+
+.authLinks .nav-link {
+  padding: 0 20px 0 0;
+}
+
+.authLinks .nav-link:last-child {
+  padding-right: 0
+}
+
+.ant-avatar-sm {
+  top:-3px
+}

@@ -1,0 +1,73 @@
+.rounded-circle {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.menu {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.menu * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.menu li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 5px;
+  overflow: hidden;
+}
+
+.menu .nav-link {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.menu .nav-link:before,
+.menu .nav-link:after {
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.menu .nav-link:before {
+  bottom: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: #e67e22;
+}
+
+.menu .nav-link:after {
+  padding: 5px 9px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  content: attr(data-hover);
+  white-space: nowrap;
+}
+
+.menu li:hover .nav-link,
+.menu .current .nav-link {
+  transform: translateY(100%);
+}
+
+.ant-layout-sider {
+  background-color: #fff
+}
+
+.ant-layout-sider-trigger {
+  color: #002140;
+  background-color: #fff
+}
