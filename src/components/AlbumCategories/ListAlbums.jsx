@@ -53,7 +53,6 @@ class ListAlbums extends Component {
   }
 
   render() {
-    // console.log(this.state.albums_product)
     return (
       <Container>
         <h1>List Albums</h1>
